@@ -1,5 +1,5 @@
-export const fetchUsers = async (page: number, pageSize: number): Promise<any[]> => {
-  const response = await fetch(`https://jsonplaceholder.typicode.com/users?_page=${page}&_limit=${pageSize}`);
+export const fetchUsers = async (): Promise<any[]> => {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/users`);
   if (!response.ok) throw new Error('Failed to fetch users');
   return response.json();
 };

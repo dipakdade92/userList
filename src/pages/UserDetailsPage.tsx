@@ -26,25 +26,25 @@ const UserDetailsPage: React.FC = () => {
             {/* Personal Information */}
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-700">Personal Information</h2>
-              <p className="text-lg text-gray-800"><span className="font-medium">Name:</span> {data.name}</p>
-              <p className="text-lg text-gray-800"><span className="font-medium">Username:</span> {data.username}</p>
-              <p className="text-lg text-gray-800"><span className="font-medium">Email:</span> {data.email}</p>
-              <p className="text-lg text-gray-800"><span className="font-medium">Phone:</span> {data.phone}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">Name:</span> {data?.name}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">Username:</span> {data?.username}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">Email:</span> {data?.email}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">Phone:</span> {data?.phone}</p>
               <p className="text-lg text-blue-400 hover:text-blue-600 transition duration-200">
                 <span className="font-medium">Website:</span> 
-                <a href={`https://${data.website}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{data.website}</a>
+                <a href={`https://${data?.website}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{data?.website}</a>
               </p>
             </div>
 
             {/* Address Information */}
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-gray-700">Address</h2>
-              <p className="text-lg text-gray-800"><span className="font-medium">Street:</span> {data.address.street}</p>
-              <p className="text-lg text-gray-800"><span className="font-medium">Suite:</span> {data.address.suite}</p>
-              <p className="text-lg text-gray-800"><span className="font-medium">City:</span> {data.address.city}</p>
-              <p className="text-lg text-gray-800"><span className="font-medium">Zipcode:</span> {data.address.zipcode}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">Street:</span> {data?.address?.street}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">Suite:</span> {data?.address?.suite}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">City:</span> {data?.address?.city}</p>
+              <p className="text-lg text-gray-800"><span className="font-medium">Zipcode:</span> {data?.address?.zipcode}</p>
               <p className="text-lg text-gray-800">
-                <span className="font-medium">Geo:</span> Lat: {data.address.geo.lat}, Lng: {data.address.geo.lng}
+                <span className="font-medium">Geo:</span> Lat: {data?.address?.geo?.lat}, Lng: {data?.address?.geo?.lng}
               </p>
             </div>
           </div>
@@ -52,9 +52,9 @@ const UserDetailsPage: React.FC = () => {
           {/* Company Information */}
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-gray-700">Company</h2>
-            <p className="text-lg text-gray-800"><span className="font-medium">Name:</span> {data.company.name}</p>
-            <p className="text-lg text-gray-800"><span className="font-medium">Catchphrase:</span> {data.company.catchPhrase}</p>
-            <p className="text-lg text-gray-800"><span className="font-medium">Business:</span> {data.company.bs}</p>
+            <p className="text-lg text-gray-800"><span className="font-medium">Name:</span> {data?.company?.name}</p>
+            <p className="text-lg text-gray-800"><span className="font-medium">Catchphrase:</span> {data?.company?.catchPhrase}</p>
+            <p className="text-lg text-gray-800"><span className="font-medium">Business:</span> {data?.company?.bs}</p>
           </div>
         </div>
 

@@ -1,7 +1,14 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "jsx":"react-jsx",
+    "types": ["jest"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES6",
+    "lib": ["DOM", "ES2015"],
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "node"
+  },
+  "include": ["src", "jest.config.ts"]
 }

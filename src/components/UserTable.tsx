@@ -37,11 +37,12 @@ const UserTable: React.FC<UserTableProps> = ({ users }) => {
 
       <Table.Body>
         {users.map(user => (
-
           <Table.Row key={user.id} className="even:bg-blue-50">
-            <Table.RowHeaderCell><Link to={`/user/${user.id}`} className="text-blue-500 hover:underline">
-              {user.name}
-            </Link></Table.RowHeaderCell>
+            <Table.RowHeaderCell>
+              <Link to={`/user/${user.id}`} className="text-blue-500 hover:underline">
+                {user.name}
+              </Link>
+            </Table.RowHeaderCell>
             <Table.Cell>{user.email}</Table.Cell>
             <Table.Cell>{user.address.city}</Table.Cell>
             <Table.Cell>{user.address.street}</Table.Cell>
@@ -50,7 +51,6 @@ const UserTable: React.FC<UserTableProps> = ({ users }) => {
             <Table.Cell>{user.website}</Table.Cell>
           </Table.Row>
         ))}
-
       </Table.Body>
     </Table.Root>
 

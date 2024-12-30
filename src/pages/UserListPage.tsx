@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Pagination from '../components/Pagination';
 import UserTable from '../components/UserTable';
 import { useFetchUsers } from '../utils/fetchHandler';
-import ErrorImage from '../assets/error.svg';
+// import ErrorImage from '../assets/error.svg';
 
 const UserListPage: React.FC = () => {
   const { users, loadUsers, error } = useFetchUsers();
@@ -21,7 +21,7 @@ const UserListPage: React.FC = () => {
       {error ? (
         <div className="flex flex-col items-center py-10">
           <div className="font-bold">{error}</div>
-          <img className='w-[200%]' src={ErrorImage} alt={"this is an error message"} />
+          {/* <img className='w-[200%]' src={ErrorImage} alt={"this is an error message"} /> */}
         </div>
       ) : users.length > 0 ? (
         <>
